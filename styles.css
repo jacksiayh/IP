@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px; /* Added padding to the left and right */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Distribute space between logo and nav items */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Display list items as a flex container */
+    margin-left: auto; /* Adjust margin to provide more space */
+}
+
+nav li {
+    margin: 0 15px; /* Adjust margin to provide more space */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px; /* Add padding to create oval shape */
+    border-radius: 20px; /* Adjust border-radius to create ovals */
+    border: 2px solid #fff; /* Add a border for better visibility */
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/* Add styles for the logo */
+.logo {
+    margin-right: 20px; /* Adjust the margin to create space on the left */
+}
+
+.logo img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ccc;
+}
