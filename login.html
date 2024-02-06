@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="CSS/login.css">
 </head>
-
 <body>
-    <div class="login-container">
-        <form id="login-form" action="#" method="post">
-            <h2>Login</h2>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>
-</body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1> Welcome Back! <br> Sign In to Your Account<br></h1>
+            <img src="images/logo.png" class="left-login-image" alt="logo">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="user">Username</label>
+                    <input type="text" name="user" placeholder="Username">
+                </div>
+                <div class="textfield">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <button id="formsubmitbtn" class="btn-login">Login</button>
 
+                <p class="register-text">Don't have an account? <a href="registration.html">Register here</a></p>
+
+            </div>
+        </div>
+    </div>
+    <script src="JS/login.js"></script>
+</body>
 </html>
-    
