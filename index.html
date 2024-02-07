@@ -1,133 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="CSS/index.css">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 <body>
-  <div class="header">
+    <header>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='#'><img src='./images/logo.png'/></a></li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="minigame.html">Mini-game</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a id="loginBtn" href="login.html">Login</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+    </header>
+ <!-- Section 1 -->
+ <div class="section-1">
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo.png" style="height:100px;" alt="logo-image">
-            </div>
-            <nav>
-                <ul id="menu-items">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="products.html">Products</a></li>
-                  <li><a href="solutions.html">Solutions</a></li>
-                  <li><a href="minigame.html">Mini-game</a></li>
-                  <li><a href="cart.html">Shopping cart</a></li>
-                  <li><a href="notifications.html">Notifications</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="login.html">Login</a></li>
-                </ul>
-            </nav>
-            <img src="images/cart.png" alt="cart" width="30px" height="30px" class="cart-img">
-            <img src="images/menu.png" alt="menu" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
-        </div>
-
-        <!-- Section 1 -->
         <div class="col-md-6">
-          <h2>Section 1</h2>
-          <p>This is the content of section 1.</p>
+            <h2>Explore the world of cubes!</h2>
+            <button class="learn-more-button" onclick="window.location.href='products.html'">To Products</button>
         </div>
-
-        <!-- Section 2 -->
-        <div class="col-md-6">
-          <h2>Section 2</h2>
-          <p>This is the content of section 2.</p>
-        </div>
-
-        <!-- Section 3 -->
-        <div class="col-md-6">
-          <h2>Section 3</h2>
-          <p>This is the content of section 3.</p>
-        </div>
-
-        <!-- Section 4 -->
-        <div class="col-md-6">
-          <h2>Section 4</h2>
-          <p>This is the content of section 4.</p>
-        </div>
-
-        <!-- Section 5 -->
-        <div class="col-md-6">
-          <h2>Section 5</h2>
-          <p>This is the content of section 5.</p>
-        </div>
-
     </div>
 </div>
 
+<!-- Section 2 -->
+<div class="section-2">
+    <div class="container">
+        <div class="col-md-6">
+            <h2>Need help solving?</h2>
+            <button class="learn-more-button" onclick="window.location.href='solutions.html'">To Solutions</button>
+        </div>
+    </div>
+</div>
+
+<!-- Section 3 -->
+<div class="section-3">
+    <div class="container">
+        <div class="col-md-6">
+            <h2>Can't afford? Try an online cube instead!</h2>
+            <button class="learn-more-button" onclick="window.location.href='minigame.html'">To Mini-game</button>
+        </div>
+    </div>
+</div>
+
+<!-- Section 4 -->
+<div class="section-4">
+    <div class="container">
+        <div class="col-md-6">
+            <h2>Curious about Rubiks cubes?</h2>
+            <button class="learn-more-button" onclick="window.location.href='about.html'">To About</button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Contact Us</h3>
+                <p>Email: example@example.com</p>
+                <p>Phone: +123456789</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo.png" alt="Footer Logo">
+                <p>Follow us on social media for updates.</p>
+                <div class="app-logo">
+                    <a href="facebook.com">Facebook</a>
+                    <a href="instagram.com">Instagram</a>
+                    <a href="youtube.com">Youtube</a>
+                </div>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="minigame.html">Mini-game</a></li>
+                    <li><a href="cart.html">Shopping cart</a></li>
+                    <li><a href="notifications.html">Notifications</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+        </div>
+        <hr>
+        <p class="copyright">© 2024 Your Company. All rights reserved.</p>
+    </div>
+</footer>
+
 <script>
-  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    document.addEventListener("DOMContentLoaded", function () {
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+        const loginBtn = document.getElementById("loginBtn");
 
-  if (loggedInUser && loggedInUser.loggedIn) {
-      const userName = loggedInUser.username;
-      const userPassword = loggedInUser.password;
+        function logOut() {
+            const confirmLogout = confirm("Are you sure you want to log out?");
+            if (confirmLogout) {
+                localStorage.removeItem("loggedInUser");
+                loginBtn.innerText = "Login";
+                loginBtn.href = "index.html";
+            }
+        }
 
-      alert(`Welcome ${user}!`);
+        if (loggedInUser && loggedInUser.loggedIn) {
+            const user = loggedInUser.user;
+            const password = loggedInUser.password;
 
-  } else {
-      const confirmLogout = confirm("You are not logged in. Do you want to go to the login page?");
-      if (confirmLogout) {
-          window.location.href = "login.html";
-      }
-  }
+            alert(`Welcome ${user}!`);
+            loginBtn.innerText = "Log out";
+            loginBtn.href = "#";
+            loginBtn.addEventListener("click", logOut);
+        } else {
+            const confirmLogout = confirm("You are not logged in. Do you want to go to the login page?");
+            if (confirmLogout) {
+                window.location.href = "login.html";
+            }
+
+            loginBtn.innerText = "Login";
+            loginBtn.href = "login.html";
+        }
+    });
 </script>
 
 </body>
-<!-- Footer -->
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer-col-1">
-        <h3>Contact Us</h3>
-        <p>Email: example@example.com</p>
-        <p>Phone: +123456789</p>
-      </div>
-      <div class="footer-col-2">
-        <img src="images/logo.png" alt="Footer Logo">
-        <p>Follow us on social media for updates.</p>
-        <div class="app-logo">
-          <img src="images/facebook.png" alt="Facebook" width="30px" height="30px">
-          <img src="images/youtube.png" alt="Youtube" width="30px" height="30px">
-          <img src="images/instagram.png" alt="Instagram" width="30px" height="30px">
-        </div>
-      </div>
-      <div class="footer-col-3">
-        <h3>Useful Links</h3>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Return Policy</a></li>
-        </ul>
-      </div>
-      <div class="footer-col-4">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="solutions.html">Solutions</a></li>
-          <li><a href="minigame.html">Mini-game</a></li>
-          <li><a href="cart.html">Shopping cart</a></li>
-          <li><a href="notifications.html">Notifications</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </div>
-    </div>
-    <hr>
-    <p class="copyright">© 2024 Your Company. All rights reserved.</p>
-  </div>
-</footer>
-
-
-
-
 
 </html>

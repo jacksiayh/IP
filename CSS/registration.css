@@ -12,7 +12,7 @@ body * {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #201b2c;
+    background: #201b2c; /* Corrected background color */
 }
 
 .left-login, .right-login {
@@ -21,6 +21,7 @@ body * {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: #2f2841;
 }
 
 .left-login > h1 {
@@ -33,7 +34,12 @@ body * {
 }
 
 .right-login {
-    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #514869;
 }
 
 .card-login {
@@ -84,7 +90,7 @@ body * {
 .btn-login {
     width: 100%;
     padding: 16px 0px;
-    margin: 25px 0; /* Added margin-bottom for better spacing */
+    margin: 25px 0;
     border: none;
     border-radius: 8px;
     outline: none;
