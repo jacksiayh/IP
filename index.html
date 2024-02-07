@@ -65,11 +65,11 @@
 <script>
   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
-  if (loggedInUser && loggedInUser.userLogged) {
+  if (loggedInUser && loggedInUser.loggedIn) {
       const userName = loggedInUser.username;
       const userPassword = loggedInUser.password;
 
-      alert(`Welcome ${userName}, you are logged in`);
+      alert(`Welcome ${user}!`);
 
   } else {
       const confirmLogout = confirm("You are not logged in. Do you want to go to the login page?");

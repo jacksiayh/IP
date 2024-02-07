@@ -4,12 +4,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("formsubmitbtn").addEventListener("click", function(e) {
         e.preventDefault();
-        console.log('form submitted!')
+        console.log('submitted')
 
+        let userID = document.getElementById("user").value;
         let passID = document.getElementById("password").value;
-        let userID = document.getElementById("username").value;
 
-        let url = `${APIURL}?q={"password": "${passID}", "username": "${userID}"}`;
+        console.log("Searching for user:", userID, "with password:", passID);
+        let url = `${APIURL}?q={"user": "${userID}", "password": "${passID}"}`;
+
                 
         fetch(url, {
             method: "GET",
@@ -20,18 +22,16 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .then(response => response.json())
         .then(data => {
+            console.log('Response Data:', data);
             if (data.length > 0) {
                 console.log("User found in database", data);
 
-                const userLogged = true;
+                const loggedIn = true;
 
-                // Store in localStorage
-                localStorage.setItem("loggedInUser", JSON.stringify({ username: userID, password: passID, userLogged }));
+                localStorage.setItem("loggedInUser", JSON.stringify({ user: userID, password: passID, loggedIn }));
 
-                // Redirect to home page
                 window.location.href = "index.html";
 
-                // tell user he/she is logged in
                 alert("Logged in as username: " + userID);
                     
             } else {
