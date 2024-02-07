@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/product.css">
+    <link rel="stylesheet" href="CSS/products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 
 <body>
@@ -60,68 +60,89 @@
   
     <section class="product-section">
       <div class="container1">
-          <div class="product-container">
-              <div class="product-image">
-                <img src="#" alt="#">
-              </div>
-              <div class="product-description">
-                <h2 class="pname">Rubiks cube</h2>
-                <h3 class="pprice">$$$</h3>
-              </div>
-          </div>
-
-          <div class="product-container">
-            <div class="product-image">
+        <div class="product-container">
+          <div class="product-image">
               <img src="#" alt="#">
-            </div>
-            <div class="product-description">
-              <h2 class="pname">Rubiks cube</h2>
-              <h3 class="pprice">$$$</h3>
-            </div>
           </div>
+          <div class="product-description">
+              <h2 class="pname">Rubiks cube1</h2>
+              <h3 class="pprice">$10</h3>
+          </div>
+          <a href="#" class="overlay" onclick="addToCart('Rubiks cube1', 10.00)">
+            <p>Add to Cart</p>
+          </a>
+        </div>
 
-          <div class="product-container">
-              <div class="product-image">
-                <img src="#" alt="#">
-              </div>
-              <div class="product-description">
-                <h2 class="pname">Rubiks cube</h2>
-                <h3 class="pprice">$$$</h3>
-              </div>
+        <div class="product-container">
+          <div class="product-image">
+              <img src="#" alt="#">
           </div>
+          <div class="product-description">
+              <h2 class="pname">Rubiks cube2</h2>
+              <h3 class="pprice">$20</h3>
+          </div>
+          <a href="#" class="overlay" onclick="addToCart('Rubiks cube1', 20.00)">
+              <p>Add to Cart</p>
+          </a>
+        </div>
+
+        <div class="product-container">
+          <div class="product-image">
+              <img src="#" alt="#">
+          </div>
+          <div class="product-description">
+              <h2 class="pname">Rubiks cube3</h2>
+              <h3 class="pprice">$30</h3>
+          </div>
+          <a href="#" class="overlay" onclick="addToCart('Rubiks cube1', 30.00)">
+            <p>Add to Cart</p>
+          </a>
+        </div>
       </div>
+
+
 
       <div class="container2">
-          <div class="product-container">
-            <div class="product-image">
+        <div class="product-container">
+          <div class="product-image">
               <img src="#" alt="#">
-            </div>
-            <div class="product-description">
-              <h2 class="pname">Rubiks cube</h2>
-              <h3 class="pprice">$$$</h3>
-            </div>
           </div>
+          <div class="product-description">
+              <h2 class="pname">Rubiks cube4</h2>
+              <h3 class="pprice">$40</h3>
+          </div>
+          <a href="#" class="overlay" onclick="addToCart('Rubiks cube1', 40.00)">
+            <p>Add to Cart</p>
+          </a>
+        </div>
 
-          <div class="product-container">
-              <div class="product-image">
-                <img src="#" alt="#">
-              </div>
-              <div class="product-description">
-                <h2 class="pname">Rubiks cube</h2>
-                <h3 class="pprice">$$$</h3>
-              </div>
+        <div class="product-container">
+          <div class="product-image">
+              <img src="#" alt="#">
           </div>
-
-          <div class="product-container">
-              <div class="product-image">
-                <img src="#" alt="#">
-              </div>
-              <div class="product-description">
-                <h2 class="pname">Rubiks cube</h2>
-                <h3 class="pprice">$$$</h3>
-              </div>
+          <div class="product-description">
+              <h2 class="pname">Rubiks cube5</h2>
+              <h3 class="pprice">$50</h3>
           </div>
+          <a href="#" class="overlay" onclick="addToCart('Rubiks cube1', 50.00)">
+            <p>Add to Cart</p>
+          </a>
+        </div>
+        
+        <div class="product-container">
+          <div class="product-image">
+              <img src="#" alt="#">
+          </div>
+          <div class="product-description">
+              <h2 class="pname">Rubiks cube6</h2>
+              <h3 class="pprice">$60</h3>
+          </div>
+          <a href="#" class="overlay" onclick="addToCart('Rubiks cube1', 60.00)">
+            <p>Add to Cart</p>
+          </a>
+        </div>
       </div>
+
   </section>
     <footer class="footer">
       <div class="row">
@@ -165,42 +186,7 @@
   </div>
 </footer>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
-      const loginBtn = document.getElementById("loginBtn");
-
-      function logOut() {
-          const confirmLogout = confirm("Are you sure you want to log out?");
-          if (confirmLogout) {
-              localStorage.removeItem("loggedInUser");
-              loginBtn.innerText = "Login";
-              loginBtn.href = "index.html";
-          }
-      }
-
-      if (loggedInUser && loggedInUser.loggedIn) {
-          const user = loggedInUser.user;
-          const password = loggedInUser.password;
-
-          if (welcomeDisplayed !== "true") {
-            alert(`Welcome ${user}!`);
-            localStorage.setItem("welcomeDisplayed", "true"); 
-          }
-          loginBtn.innerText = "Log out";
-          loginBtn.href = "#";
-          loginBtn.addEventListener("click", logOut);
-      } else {
-          const confirmLogout = confirm("You are not logged in. Do you want to go to the login page?");
-          if (confirmLogout) {
-              window.location.href = "login.html";
-          }
-
-          loginBtn.innerText = "Login";
-          loginBtn.href = "login.html";
-      }
-  });
-</script>
+<script src="JS/products.js"></script>
 
 </body>
 
