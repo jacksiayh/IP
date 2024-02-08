@@ -1,15 +1,21 @@
-const heartIcon = document.querySelector(".like-button .heart-icon");
-const likesAmountLabel = document.querySelector(".like-button .likes-amount");
+// Get all heart icons and likes amount labels
+const heartIcons = document.querySelectorAll(".like-button .heart-icon");
+const likesAmountLabels = document.querySelectorAll(".like-button .likes-amount");
 
-let likesAmount = 7;
+// Initialize likes amount array with initial values from HTML
+let likesAmounts = Array.from(likesAmountLabels, (label) => parseInt(label.innerHTML, 10));
 
-heartIcon.addEventListener("click", () => {
-  heartIcon.classList.toggle("liked");
-  if (heartIcon.classList.contains("liked")) {
-    likesAmount++;
-  } else {
-    likesAmount--;
-  }
+// Add click event listener to each heart icon
+heartIcons.forEach((heartIcon, index) => {
+  heartIcon.addEventListener("click", () => {
+    heartIcon.classList.toggle("liked");
+    if (heartIcon.classList.contains("liked")) {
+      likesAmounts[index]++;
+    } else {
+      likesAmounts[index]--;
+    }
 
-  likesAmountLabel.innerHTML = likesAmount;
+    // Update the likes amount for the corresponding product
+    likesAmountLabels[index].innerHTML = likesAmounts[index];
+  });
 });
