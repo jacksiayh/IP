@@ -136,6 +136,19 @@ header {
     height: auto; 
 }
 
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
 .learn-more-button {
     position: relative;
     display: inline-block;
