@@ -2,136 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+    <link rel="stylesheet" href="CSS/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        header {
-            background: #ffffff;
-            color: #333;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #bbb 1px solid;
-        }
-
-        header a {
-            color: #888;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-
-        header ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            overflow: hidden;
-        }
-
-        header #logo {
-            text-transform: uppercase;
-            float: left;
-        }
-
-        header #logo h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: normal;
-        }
-
-        header #logo img {
-            margin: 7px 0 0 0;
-        }
-
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-
-        header .highlight, header .current a {
-            color: #5d9cec;
-            font-weight: bold;
-        }
-
-        header a:hover {
-            color: #333;
-            font-weight: bold;
-        }
-
-        header #logo a:hover {
-            color: #5d9cec;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 20px 0;
-        }
-
-        .checkout-form {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: #5d9cec;
-            color: #ffffff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-    </style>
-</head>
 <body>
     <header>
-        <div class="container">
-            <div id="logo">
-                <h1><span class="highlight">YourStore</span></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='#'><img src='./images/logo.png'/></a></li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="minigame.html">Mini-game</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a id="loginBtn" href="login.html">Login</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
     </header>
 
     <main>
@@ -168,5 +63,54 @@
             </div>
         </div>
     </main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="row">
+        <div class="footer-col-1">
+            <h3>Contact Us</h3>
+            <p>Email: example@example.com</p>
+            <p>Phone: +123456789</p>
+        </div>
+        <div class="footer-col-2">
+            <img src="images/logo.png" alt="Footer Logo">
+            <p>Follow us on social media for updates.</p>
+            <div class="app-logo">
+                <a href="facebook.com">Facebook</a>
+                <a href="instagram.com">Instagram</a>
+                <a href="youtube.com">Youtube</a>
+            </div>
+        </div>
+        <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Return Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-col-4">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="minigame.html">Mini-game</a></li>
+                <li><a href="cart.html">Shopping cart</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+    </div>
+    <hr>
+    <p class="copyright">© 2024 Your Company. All rights reserved.</p>
+</div>
+</footer>
+
+<script src="JS/norm.js"></script>
+
+<script src="JS/checkout.js"></script>
+
 </body>
+
 </html>
