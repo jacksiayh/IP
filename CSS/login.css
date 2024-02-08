@@ -1,30 +1,10 @@
 body {
     margin: 0;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body * {
     box-sizing: border-box;
-}
-
-.header {
-    background-color: #201b2c;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-#menu-items {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-#menu-items li a {
-    text-decoration: none;
-    color: white;
 }
 
 .section-container {
@@ -32,11 +12,6 @@ body * {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.footer {
-    background-color: #00ff00; /* Green */
-    padding: 20px;
 }
 
 .left-login {
@@ -143,12 +118,13 @@ body * {
     border-radius: 8px;
     outline: none;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 1000;
     letter-spacing: 3px;
     color: #2b134b;
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
+    font-size: 20px;
 }
 
 .register-text {

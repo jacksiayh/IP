@@ -9,6 +9,12 @@ body {
     --color2: #181818 ;
 }
 
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+
+}
+
 header {
     background-color: var(--color2);
     padding: 10px 0;
@@ -66,17 +72,22 @@ header {
 
 .col-md-6 {
     text-align: center;
+    position: relative;
 }
-
 
 .section-1 {
     background-color: red;
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    border:2px solid whitesmoke
+    border: 2px solid whitesmoke;
+}
+
+.section-1 .container-image img {
+    width: 23%; 
+    height: auto; 
 }
 
 .section-2 {
@@ -84,9 +95,14 @@ header {
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    border:2px solid whitesmoke
+    border: 2px solid whitesmoke;
+}
+
+.section-2 .container-image img {
+    width: 45%; 
+    height: auto; 
 }
 
 .section-3 {
@@ -94,19 +110,30 @@ header {
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    border:2px solid whitesmoke
+    border: 2px solid whitesmoke;
 }
+
+.section-3 .container-image img {
+    width: 60%; 
+    height: auto; 
+}
+
 
 .section-4 {
     background-color: greenyellow;
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    border:2px solid whitesmoke
+    border: 2px solid whitesmoke;
+}
+
+.section-4 .container-image img {
+    width: 10%; 
+    height: auto; 
 }
 
 .learn-more-button {
@@ -119,6 +146,7 @@ header {
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s;
+    margin-bottom: 20px;
 }
 
 .learn-more-button:hover {
@@ -129,13 +157,13 @@ header {
     background: #000;
     color: #8a8a8a;
     font-size: 14px;
-    padding: 20px 0; /* Adjust the padding as needed */
-    text-align: center; /* Center align text */
+    padding: 20px 0; 
+    text-align: center; 
 }
 
 .footer h3 {
     color: #fff;
-    margin-bottom: 10px; /* Adjust margin as needed */
+    margin-bottom: 10px; 
 }
 
 .footer-col-1,
@@ -165,13 +193,13 @@ header {
 
 .copyright {
     text-align: center;
-    margin-top: 10px; /* Adjust margin as needed */
+    margin-top: 10px; 
 }
 
 .app-logo img {
-    width: 30px; /* Adjust the size as needed */
+    width: 30px;
     height: 30px;
-    margin-right: 10px; /* Adjust margin as needed */
+    margin-right: 10px; 
 }
 
 #check {display: none;}
