@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/redirect.css">
+</head>
+<body>
+
+    <div class="loading-animation">
+        <dotlottie-player src="https://lottie.host/d345d157-564b-4fe6-8235-9c6c0e2246b9/lBxLovFhBi.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
+    
+    <script>
+        localStorage.setItem('redirected', 'true');
+
+        setTimeout(function() {
+            window.location.href = 'checkout.html';
+        }, 5000);
+    </script>
+
+</body>
+</html>
+
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
