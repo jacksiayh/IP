@@ -216,7 +216,9 @@ header {
     width: 230px;
     height: 230px;
     margin: 10px;
-    padding-top: 90px;
+    padding-top: 50px;
+    display:flex;
+    flex-direction: column;
 }
 
 .footer {
