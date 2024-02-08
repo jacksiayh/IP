@@ -74,6 +74,38 @@ header {
 .col-md-6 {
     text-align: center;
 }
+
+#solvedButton {
+    background-color: #4CAF50;  
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-top: 20px; 
+}
+
+#solvedButton:hover {
+    background-color: #45a049; 
+}
+
+.pointsbox {
+    width: 100%;
+    max-width: 200px;
+    background-color: #4CAF50;  
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-top: 20px; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+
 .footer {
     background: #000;
     color: #8a8a8a;
@@ -629,13 +661,23 @@ body {
 
 .body-wrapper {
     position: relative;
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     background-blend-mode: multiply;
     animation: page-fade-in 2s;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px; /* Adjust the bottom spacing as needed */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @keyframes page-fade-in {

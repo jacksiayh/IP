@@ -29,6 +29,10 @@
     </nav>
     </header>
 
+<div class="pointsbox">
+    <p>Points : <span id="pointsdisplay">0</span></p>
+</div>
+
 <div class="game">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="height: 0; position: absolute">
     <defs>
@@ -476,12 +480,16 @@
         <button class="cubetwo-js cubetwo-btn-bottom-right cubetwo-btn-adjust">
             <svg class="cubetwo-icon cubetwo-icon--adjust" aria-hidden="true"><use xlink:href="#adjust"></use></svg>
         </button>
-    </div>
+    </div> 
 
 </div>
 </div>
 </div>
-
+    <div class="centered-container">
+        <div class="solvedButton">
+            <button id="solvedButton">Solved</button>
+        </div>
+    </div>  
 <footer class="footer">
     <div class="row">
         <div class="footer-col-1">
@@ -529,6 +537,41 @@
 <script src="JS/minigame2.js"></script>
 
 <script src="JS/norm.js"></script>
+
+<script>
+    let pointslocal = parseInt(localStorage.getItem('pointslocal')) || 0;  // Initialize pointslocal from local storage
+
+    document.getElementById('solvedButton').addEventListener('click', function() {
+        let today = new Date().toDateString();
+        let attempts = localStorage.getItem('solvedAttempts') || '{}';
+        attempts = JSON.parse(attempts);
+
+        if (!attempts[today]) {
+            attempts[today] = 0;
+        }
+
+        if (attempts[today] < 3) {
+            // User has attempts left
+            attempts[today]++;
+            localStorage.setItem('solvedAttempts', JSON.stringify(attempts));
+
+            // Update pointslocal with each click
+            pointslocal += 3;
+
+            // Add your logic for what happens when the button is clicked
+            alert('Minigame solved!'); // Example alert, replace with your logic
+            document.getElementById('pointsdisplay').innerHTML = pointslocal;
+
+            // Store updated pointslocal in local storage
+            localStorage.setItem('pointslocal', pointslocal.toString());
+        } else {
+            // User has exceeded the allowed attempts for today
+            alert('You have already used all your attempts for today.');
+        }
+    });
+</script>
+
+
 
 </body>
 

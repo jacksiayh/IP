@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "user": userID,
             "password": passID,
             "email": emailID,
+            "points": 0
         };
 
         let settings = {
