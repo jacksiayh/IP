@@ -1,6 +1,6 @@
 # Cubix
 
-GitHub link: (https://github.com/jacksiayh/IP-project)
+GitHub link: (https://github.com/jacksiayh/IP)
 
 Cubix is a website catered to those who enjoy Rubik's cubes and is a platform for like-minded cubing enthusiasts to communicate and form social connections. Through our website, these passionate cube solvers can find new ways and algorithms to solve their Rubiks cubes and make this craft even more interesting. Furthermore, our website presents itself with a diversity of Rubiks cubes that appeal to cubing enthusiasts.
  
